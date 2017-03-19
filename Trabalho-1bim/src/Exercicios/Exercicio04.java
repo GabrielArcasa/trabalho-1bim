@@ -9,13 +9,13 @@ public class Exercicio04 {
 	public static void main(String[] args) {
 
 		input = new Scanner(System.in);
-		int x, exponencicao;
-
+		int	 x,exponencicao;
+		
 		System.out.println("Informe o valor: ");
 		x = input.nextInt();
 
-		exponencicao = x * x * x;
+		exponencicao = (int) Math.pow(x,x);
 
-		System.out.println("O Numero " + x + " elevado a Três é igual a: " + exponencicao);
+		System.out.println("O Numero " + x + " elevado a " + x + " é igual a: " + exponencicao);
 	}
 }

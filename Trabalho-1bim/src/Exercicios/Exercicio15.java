@@ -23,7 +23,7 @@ public class Exercicio15 {
 				VetorEmail[i] = x.nextLine();
 				System.out.println("Insira o Telefone: ");
 				VetorTelefone[i] = x.nextLine();
-				System.out.printf("Cliente " + (i+1) + " adicionado.\n\n");
+				System.out.printf("\nCliente " + (i+1) + " adicionado.\n\n");
 				System.out.println("------------------------------------");
 			}
 			

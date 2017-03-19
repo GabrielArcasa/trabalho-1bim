@@ -3,24 +3,30 @@ package Exercicios;
 import java.util.Scanner;
 
 public class Exercicio19 {
-	
-	privateqweqweqwewqeqwe static Scanner x;
 
-	public static void Principal (String[] args) {
+	static int[] VetorNumero = new int[10];
 
+	public static Scanner x;
+
+	public static void main(String[] args) {
 		x = new Scanner(System.in);
-				
-		int Numeros = 10;
-		int[] VetorNumero = new int[Numeros];			
-		for(int i = 0; i < Numeros; ++i){
-			System.out.println("Insira o valor desejado " + (i+1));
+
+		for (int i = 0; i < 10; ++i) {
+
+			System.out.println("Insira o valor desejado " + (i + 1));
 			VetorNumero[i] = x.nextInt();
 		}
-		
-		for (int i = 0; i < Numeros; ++i){
-			System.out.println("-> " + VetorNumero[i]);
+		System.out.print(getVetor());
+
+	}
+
+	static public String getVetor() {
+		String VetorFinal = "";
+
+		for (int i = 0; i < 10; ++i) {
+			VetorFinal += "-> " + VetorNumero[i] + "\n";
 		}
-		
-		
-}
+		return VetorFinal;
+
+	}
 }
